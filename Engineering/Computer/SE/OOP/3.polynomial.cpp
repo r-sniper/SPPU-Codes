@@ -1,0 +1,79 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+class Quadratic
+{
+	private:
+		int a,b,c;
+	public:
+		Quadratic operator +(Quadratic );
+		friend istream& operator >>(istream& input,Quadratic& temp);
+		friend ostream& operator <<(ostream& output,Quadratic temp);
+		void evaluate(int);
+		void solution();
+		Quadratic()
+		{
+			a=0;
+			b=0;
+			c=0;
+		}
+		
+};
+
+istream& operator >>(istream& input,Quadratic& temp)
+{
+	cout<<"Enter coefficient for x^2 :";
+	input>>temp.a;
+	cout<<"Enter coefficient for x :";
+	input>>temp.b;
+	cout<<"Enter the constant part :";
+	input>>temp.c;
+	return input;
+}
+
+ostream& operator <<(ostream& output,Quadratic temp)
+{
+	output<<temp.a<<"x^2 + "<<temp.b<<"x + "<<temp.c<<endl; 
+	return output;
+}
+
+Quadratic Quadratic::operator +(Quadratic obj2)
+{
+	Quadratic result;
+	result.a = a + obj2.a;
+	result.b = b + obj2.b;
+	result.c = c + obj2.c;
+	return result;
+}
+
+void Quadratic::evaluate(int x)
+{
+	int result = a*x*x + b*x + c;
+	cout<<"Value of ";
+	cout<<*this;
+	cout<<"for x="<<x<<" is "<<result<<endl;
+}
+
+void Quadratic::solution()
+{
+	float root1 = (-b + sqrt(b*b - 4*a*c))/(float)2*a;
+	float root2 = (-b - sqrt(b*b - 4*a*c))/(float)2*a;
+	cout<<"Roots are : "<<root1<<" "<<root2<<endl;
+}
+
+int main ()
+{
+  	Quadratic poly1,poly2,poly3;
+  	cin>>poly1>>poly2;
+  	poly3 = poly1 + poly2;
+  	cout<<poly1<<poly2;
+  	cout<<"---------------\n";
+  	cout<<poly3;
+  	int x;
+  	cout<<"Enter value of x: ";
+  	cin>>x;
+  	poly3.evaluate(x);
+  	poly3.solution();
+	return 0;
+}
