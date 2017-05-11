@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-int total;
+int total; //used for total
+
 
 void displayMenu()
 {
