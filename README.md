@@ -1,2 +1,6 @@
 # SPPU-Codes
-All Practical and/or Slips codes with comments
+Get all the codes for all the practicals.
+
+Engineering Codes
+BCS Codes
+BCA Codes
