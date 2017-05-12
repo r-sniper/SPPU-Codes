@@ -1,3 +1,12 @@
+/*
+Write C/C++ program to store marks scored for first test of subject 'Data Structures and
+Algorithms' for N students. Compute
+I. The average score of class
+ii. Highest score and lowest score of class
+iii. Marks scored by most of the students
+iv. list of students who were absent for the test
+*/
+
 #include <iostream>
 using namespace std;
 

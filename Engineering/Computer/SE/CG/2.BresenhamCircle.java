@@ -1,3 +1,7 @@
+/* 
+Write C++/Java program to draw circle using Bresenham‘s algorithm. Inherit pixel class.
+*/
+
 import javax.swing.JFrame;
 import java.awt.Graphics;
 import java.util.Scanner;

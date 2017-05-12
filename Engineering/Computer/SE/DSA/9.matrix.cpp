@@ -1,3 +1,11 @@
+/*
+Write C/C++ program for storing matrix. Write functions for
+a) Check whether given matrix is upper triangular or not
+b) Compute summation of diagonal elements
+c) Compute transpose of matrix
+d) Add, subtract and multiply two matrices
+*/
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,8 @@
+/*
+Set A=(1,3, a, s, t, i} represent alphanumeric characters permitted to set the password of
+length 4. Write C/C++ program to generate all possible passwords.
+*/
+
 #include<iostream>
 
 using namespace std;
