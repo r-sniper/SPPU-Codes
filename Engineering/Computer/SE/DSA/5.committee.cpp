@@ -1,3 +1,9 @@
+/*
+A magazine committee is to be formed that consists of any 3 members to be selected from
+{ Nikhita, Aboli, Megha, Sanika, Pratik, Saurabh}. Write C/C++ program to list all possible
+committees.
+*/
+
 #include<iostream>
 #include<cstring>
 using namespace std;

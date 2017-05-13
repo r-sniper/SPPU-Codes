@@ -1,3 +1,17 @@
+/*
+In Second year Computer Engineering class of M students, set A of students play cricket and
+set B of students play badminton. Write C/C++ program to find and display-
+i.
+Set of students who play either cricket or badminton or both
+ii. Set of students who play both cricket and badminton
+iii. Set of students who play only cricket
+iv.
+Set of students who play only badminton
+v.
+Number of students who play neither cricket nor badminton
+(Note- While realizing the set duplicate entries are to avoided)
+*/
+
 #include<iostream>
 using namespace std;
 int total; //used for total
