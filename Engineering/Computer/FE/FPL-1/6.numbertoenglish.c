@@ -9,7 +9,7 @@ int main()
     printf("Enter any integer: ");
     scanf("%d",&number);
 
-    while(number)
+		while(number)
         {
 
         digit = number %10;
@@ -17,25 +17,25 @@ int main()
 
         switch(digit){
              case 0: word[i++] = "zero";
-             break;
+             	break;
              case 1: word[i++] = "one";
-             break;
+             	break;
              case 2: word[i++] = "two";
-             break;
+             	break;
              case 3: word[i++] = "three";
-             break;
+             	break;
              case 4: word[i++] = "four";
-             break;
+             	break;
              case 5: word[i++] = "five";
-             break;
+             	break;
              case 6: word[i++] = "six";
-             break;
+             	break;
              case 7: word[i++] = "seven";
-             break;
+             	break;
              case 8: word[i++] = "eight";
-             break;
+             	break;
              case 9: word[i++] = "nine";
-             break;
+             	break;
 
          }
     }
